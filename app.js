@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 
 // access request body on POST and PUT requests
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 // tell express where views and public are via absolute paths
 app.use(express.static(__dirname + '/public'));
