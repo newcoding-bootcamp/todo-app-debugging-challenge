@@ -58,7 +58,7 @@ function removeTodo(todo){
   })
   .then(function(data){
     todo.remove();
-  })
+  });
   .catch(function(err){
     console.log(err);
   })
