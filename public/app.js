@@ -1,6 +1,6 @@
 /* global $ */
 $(document).ready(function(){
-  $.getJSON("/api/todos")
+  $.getJSON("api/todos")
   .then(addTodos)
   
   $('#todoInput').keypress(function(event){
