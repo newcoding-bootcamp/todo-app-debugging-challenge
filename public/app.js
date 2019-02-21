@@ -13,8 +13,8 @@ $(document).ready( () => {
     updateTodo($(this));
   })
   
-  $('list').on('click', 'span', function(e){
-    e.stopPropagation();
+  $('list').on('click', 'span', function(res){
+    event.stopPropagation();
     removeTodo($(this).parent());
   })
 });
