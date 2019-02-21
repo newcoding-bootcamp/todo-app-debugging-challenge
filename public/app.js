@@ -36,7 +36,7 @@ function addTodo(todo){
   $('.list').append(newTodo);
 }
 
-function createTodo(){
+const createTodo = () => {
   //send request to create new todo
   var usrInput = $('#todoInput').val();
   $.post('/api/todos',{name: usrInput})
@@ -53,7 +53,7 @@ function removeTodo(todo){
   var clickedId = todo.data('id');
   var deleteUrl = '/api/todos/' + clickedId; 
   $.ajax({
-    method: 'DELETE',
+    method: 'DESTROY',
     url: deleteUrl
   })
   .then(function(data){
