@@ -1,9 +1,9 @@
 /* global $ */
-$(document).ready(function(){
+$(document).ready( () => {
   $.getJSON("api/todos")
-  .then(addTodos)
+  .then(addTodos);
   
-  $('#todoInput').keypress(function(event){
+  $('todoInput').keypress(function(event){
     if(event.which == 13) {
       createTodo();
     }
