@@ -9,11 +9,11 @@ $(document).ready( () => {
     }
   });
   
-  $('.list').on('click', 'li', function(){
+  $('list').on('click', 'li', function(){
     updateTodo($(this));
   })
   
-  $('.list').on('click', 'span', function(e){
+  $('list').on('click', 'span', function(e){
     e.stopPropagation();
     removeTodo($(this).parent());
   })
